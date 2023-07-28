@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 
+//Axulliary utils
 const middleware = require("./utils/middleware");
 const config = require("./utils/config");
 const logger = require("./utils/logger");
@@ -26,6 +27,7 @@ app.use(express.json());
 // Middleware starts
 app.use(middleware.requestLogger);
 
+//Router Starts
 app.use("/api/projects", projectRouter);
 
 // Unknown endpoint middleware, after all available routes
