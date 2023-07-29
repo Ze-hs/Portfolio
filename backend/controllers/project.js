@@ -28,4 +28,9 @@ projectRouter.put("/:id", async (req, res) => {
 	return res.json(response);
 });
 
+projectRouter.delete("/:id", async (req, res) => {
+	await Project.findByIdAndDelete(req.params.id);
+	return res.status(204).end;
+});
+
 module.exports = projectRouter;

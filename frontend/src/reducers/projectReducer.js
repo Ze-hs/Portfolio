@@ -33,6 +33,7 @@ export const { setProjects, addProject, removeProject, updateProject } =
 export const initializeProject = () => {
 	return async (dispatch) => {
 		const content = await projectService.getAll();
+		console.log(content);
 		dispatch(setProjects(content));
 	};
 };

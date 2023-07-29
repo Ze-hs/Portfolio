@@ -13,7 +13,8 @@ const projectSchema = new mongoose.Schema({
 		type: String,
 		require: true,
 	},
-	categories: [{ type: String }],
+	githubUrl: String,
+	tags: [{ type: String }],
 });
 
 projectSchema.set("toJSON", {
