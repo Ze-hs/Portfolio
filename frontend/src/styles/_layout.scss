@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+container {
+	width: min($margin-base, 100% - ($padding-base * 2));
+	margin-inline: auto;
+	border-bottom: 1px solid $clr-accent-400;
+}
+
+@mixin lg-screen {
+	@media (min-width: $breakpoint) {
+		@content;
+	}
+}
+
+@mixin sm-screen {
+	@media (max-width: $breakpoint) {
+		@content;
+	}
+}

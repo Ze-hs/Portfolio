@@ -6,6 +6,7 @@ import { initializeProject } from "./reducers/projectReducer";
 import About from "./components/About";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SideBars from "./components/SideBars";
 
 const App = () => {
 	const dispatch = useDispatch();
@@ -15,13 +16,14 @@ const App = () => {
 	});
 
 	return (
-		<div>
+		<>
 			<Header />
+			{/* <SideBars /> */}
 			<Hero />
 			<ProjectList />
 			<About />
 			<Footer />
-		</div>
+		</>
 	);
 };
 

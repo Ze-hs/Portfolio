@@ -1,7 +1,9 @@
+import "../styles/styles.scss";
+
 const About = () => {
 	return (
-		<section>
-			<h2>About</h2>
+		<section className="container">
+			<h2 className="subheading">About</h2>
 			<p>This is the about me</p>
 		</section>
 	);

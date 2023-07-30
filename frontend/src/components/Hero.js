@@ -1,11 +1,17 @@
+import "../styles/styles.scss";
+
 const Hero = () => {
 	return (
-		<section>
-			<p>Hi, my name is</p>
-			<h1>Ze Hao Su</h1>
-			<p>Software developer seeking employment</p>
+		<section className="container">
+			<div className="hero">
+				<p>Hi, my name is</p>
+				<h1 className="heading">Ze Hao Su</h1>
+				<p>
+					<span>Software developer</span> seeking employment
+				</p>
 
-			<button>LEARN MORE</button>
+				<button className="button-primary">LEARN MORE</button>
+			</div>
 		</section>
 	);
 };
