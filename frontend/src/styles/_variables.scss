@@ -1,3 +1,4 @@
+//General variables and imports
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@200;400;700&display=swap");
 
 $clr-primary-600: #1b2026;
@@ -18,26 +19,46 @@ $size-600: 2rem;
 $size-700: 3rem;
 $size-800: 4rem;
 $size-900: 5rem;
+$size-1000: 10rem;
+$size-1500: 15rem;
 
-$padding-block-400: 1rem;
+$border-radius: 6px;
 
 //Fonts related variables
 $ff-primary: "Epilogue", sans-serif;
+
+$fw-700: 700;
 
 $fs-900: $size-900;
 $fs-500: $size-500;
 $fs-400: $size-400;
 
-$margin-base: 1400px;
-$padding-base: 2em;
+//
+//base rules
+$container-margin-block: $size-400;
+$container-margin-inline: $size-400;
+$container-min: 90%;
 
-$border-radius: 6px;
+$fs-headings-lg: $size-900;
+$fs-headings-md: $size-600;
+
+$font-bold: $fw-700;
+
+//Header
+$header-height: 10vh;
+$header-height-backup: $size-900;
+
+// Header / Nav
+$nav-gap: $size-600;
+
+// Hero
+$hero-height-backup: $size-900;
+$hero-padding-inline: 25%;
+$hero-padding-inline-mob: 5%;
 
 $breakpoint: 50em;
-
-$nav-gap: $size-600;
 
 $nav-padding-top: 10em;
 $nav-padding-side: 3em;
 
-$general-padding: $size-400;
+$header-padding: $size-600;
