@@ -20,6 +20,7 @@ const Card = ({ project }) => {
 				className="card-img"
 				src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png"
 			/>
+
 			{/* <div>
 				{project.tags.map((tag) => {
 					return <div key={`${project.id}-${tag}`}>tag</div>;

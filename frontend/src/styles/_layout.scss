@@ -6,6 +6,8 @@
 // }
 
 .container {
+	box-sizing: border-box;
+	padding-inline: clamp(0%, 10%, 15%);
 	width: min($container-min, 100% - ($container-margin-inline * 2));
 	margin-inline: auto;
 	border-bottom: 1px solid $clr-accent-400;
@@ -13,7 +15,7 @@
 
 .sub-container {
 	@extend .container;
-	padding-block: 100px;
+	padding-block: 25px 100px;
 	// padding-block: ;
 }
 
@@ -23,8 +25,21 @@
 	}
 }
 
+//add medium
+@mixin md-screen {
+	@media (min-width: $breakpoint-md) {
+		@content;
+	}
+}
+
 @mixin sm-screen {
 	@media (max-width: $breakpoint) {
 		@content;
+	}
+}
+
+@include lg-screen() {
+	.container {
+		width: min($container-min, 100% - ($container-margin-inline * 8));
 	}
 }
