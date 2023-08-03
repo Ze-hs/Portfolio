@@ -27,7 +27,7 @@
 	margin-inline: auto;
 }
 
-.logo {
+.logo-wrapper {
 	padding-left: 1vw;
 	width: auto;
 	height: clamp(40px, 3vw, 65%);
@@ -35,6 +35,7 @@
 
 .navbar {
 	padding-right: 2.5vw;
+	font-family: $ff-secondary;
 }
 
 .nav_list {
@@ -123,6 +124,7 @@
 
 .heading {
 	font-size: calc(2vw + 3.5rem);
+	font-family: $ff-secondary;
 	color: $clr-secondary-900;
 }
 
@@ -136,7 +138,10 @@
 	padding: $size-300 $size-400;
 
 	font-weight: $font-bold;
+	font-family: $ff-secondary;
 	color: $clr-primary-600;
+
+	cursor: pointer;
 }
 
 // Project list
@@ -150,6 +155,7 @@
 .subheading {
 	font-size: clamp(2rem, 1vw + 1rem, 4rem);
 	margin-bottom: 1.5em;
+	font-family: $ff-secondary;
 
 	&::before {
 		content: "";
@@ -175,7 +181,7 @@
 
 	.card-text {
 		word-break: break-word;
-		line-height: 1.5em;
+		line-height: 1.5;
 
 		display: flex;
 		flex-direction: column;
@@ -211,13 +217,12 @@
 		display: flex;
 		gap: 2%;
 		flex-wrap: wrap;
-		// margin-block: 1em;
 	}
 
 	.tag {
 		border: 1px solid $clr-accent-400;
 		border-radius: $border-radius;
-		padding: 0.25em 0.5em;
+		padding: 0.25em 0.5em 0 0.5em;
 	}
 }
 
@@ -240,21 +245,22 @@
 		}
 
 		.img-overlay {
-			background-color: $clr-secondary-900;
-			opacity: 0.3;
+			background-color: $clr-primary-600;
+			opacity: 0.9;
 			position: absolute;
 			width: 100%;
 			height: 100%;
-
+			z-index: 2;
 			&:hover {
 				background-color: transparent;
 			}
 		}
 
 		.card-img {
+			position: absolute;
 			display: block;
 			max-width: 100%;
-			max-height: 100%;
+			height: auto;
 			object-fit: cover;
 		}
 
@@ -275,10 +281,16 @@
 		margin: 1.5em;
 	}
 
-	li {
+	.skill-list {
 		margin-inline: 4em;
 		list-style-type: square;
+		line-height: 2;
 		font-size: clamp(0.85rem, 0.85vw, 1.15rem);
+
+		& > li::marker {
+			content: "‣ ";
+			color: $clr-accent-200; /* or whatever color you prefer */
+		}
 	}
 }
 

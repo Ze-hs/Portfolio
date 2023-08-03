@@ -1,9 +1,10 @@
 import "../styles/styles.scss";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Hero = () => {
 	return (
 		<section className="container">
-			<div className="hero">
+			<div id="hero" className="hero">
 				<p>Hi, my name is</p>
 				<h1 className="heading">Ze Hao Su</h1>
 				<p className="subheadline">
@@ -11,7 +12,9 @@ const Hero = () => {
 					seeking new challenges everyday
 				</p>
 
-				<button className="button-primary">LEARN MORE</button>
+				<Link smooth to="/#projects" className="logo-wrapper">
+					<button className="button-primary">LEARN MORE</button>
+				</Link>
 			</div>
 		</section>
 	);

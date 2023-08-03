@@ -1,6 +1,12 @@
 //General variables and imports
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@200;400;700&display=swap");
 
+//Local font
+@font-face {
+	font-family: "Calibre";
+	src: url(../assets/fonts/Calibre/calibre-9.ttf) format("truetype");
+}
+
 $clr-primary-600: #1b2026;
 $clr-primary-300: #242d35;
 
@@ -25,7 +31,8 @@ $size-1500: 15rem;
 $border-radius: 6px;
 
 //Fonts related variables
-$ff-primary: "Epilogue", sans-serif;
+$ff-primary: "Calibre", sans-serif;
+$ff-secondary: "Epilogue", sans-serif;
 
 $fw-700: 700;
 $fw-400: 400;

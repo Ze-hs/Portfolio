@@ -1,21 +1,29 @@
 const mongoose = require("mongoose");
 
-const projectSchema = new mongoose.Schema({
-	title: {
-		type: String,
-		require: true,
+const projectSchema = new mongoose.Schema(
+	{
+		title: {
+			type: String,
+			required: true,
+		},
+		description: {
+			type: String,
+			required: true,
+		},
+		imageUrl: {
+			type: String,
+			required: true,
+		},
+		githubUrl: {
+			type: String,
+			required: true,
+		},
+		tags: [{ type: String }],
 	},
-	description: {
-		type: String,
-		require: true,
-	},
-	imageUrl: {
-		type: String,
-		require: true,
-	},
-	githubUrl: String,
-	tags: [{ type: String }],
-});
+	{
+		timestamps: true,
+	}
+);
 
 projectSchema.set("toJSON", {
 	transform: (document, returnedObject) => {

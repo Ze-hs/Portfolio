@@ -33,8 +33,12 @@ export const { setProjects, addProject, removeProject, updateProject } =
 export const initializeProject = () => {
 	return async (dispatch) => {
 		const content = await projectService.getAll();
-		console.log(content);
-		dispatch(setProjects(content));
+		console.log("inside reducer", content);
+		const sortedContent = content.sort(
+			(a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+		);
+
+		dispatch(setProjects(sortedContent));
 	};
 };
 

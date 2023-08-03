@@ -6,7 +6,7 @@ const ProjectList = () => {
 	const projects = useSelector((state) => state.projects);
 
 	return (
-		<main className="sub-container">
+		<main id="projects" className="sub-container">
 			<h2 className="subheading">Projects</h2>
 			<div className="project-list">
 				{projects.map((project) => (

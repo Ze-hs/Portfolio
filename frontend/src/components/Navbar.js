@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import "../styles/styles.scss";
@@ -24,13 +24,19 @@ const Navbar = () => {
 
 			<ul className={`nav_list ${menuStyle}`}>
 				<li>
-					<Link to="/">Home</Link>
+					<Link smooth to="/#">
+						Home
+					</Link>
 				</li>
 				<li>
-					<Link to="/about">About</Link>
+					<Link smooth to="/#projects">
+						Projects
+					</Link>
 				</li>
 				<li>
-					<Link to="/projects">projects</Link>
+					<Link smooth to="/#about">
+						About
+					</Link>
 				</li>
 			</ul>
 		</nav>

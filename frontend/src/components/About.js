@@ -2,7 +2,7 @@ import "../styles/styles.scss";
 
 const About = () => {
 	return (
-		<section className="sub-container ">
+		<section id="about" className="sub-container ">
 			<div className="about">
 				<h2 className="subheading">About</h2>
 				<div className="about-text">
@@ -17,20 +17,23 @@ const About = () => {
 						back-end development.
 					</p>
 
-					<p>Here are some of the technologies I've worked with</p>
-					<ul>
+					<p>
+						Here are some of the technologies I've worked with
+						recently:
+					</p>
+					<ul className="skill-list">
+						<li>Java</li>
 						<li>Python</li>
 						<li>R</li>
 						<li>React</li>
 						<li>Express</li>
 						<li>Node.js</li>
-						<li>Java</li>
 					</ul>
 					<p>
 						Currently, I'm on a journey to build my own emulator
-						entirely from scratch – starting with a digital
-						computer, crafting my coding language, and finally
-						creating the emulator itself."
+						entirely from scratch – starting with designing an
+						assembler, crafting my coding language, and finally
+						creating the emulator itself.
 					</p>
 
 					<p>

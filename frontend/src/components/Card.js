@@ -3,12 +3,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Card = ({ project }) => {
+	console.log(project.githubUrl);
 	return (
 		<div className="card">
 			<div className="card-text">
 				<p className="card-title">
 					{project.title}
-					<a href="/#">
+					<a
+						href={project.githubUrl}
+						target="_blank"
+						rel="noreferrer"
+					>
 						<FontAwesomeIcon icon={faGithub} />
 					</a>
 				</p>
@@ -25,14 +30,14 @@ const Card = ({ project }) => {
 				</div>
 			</div>
 
-			<a className="card-img-link-wrapper" href="http://google.com">
+			<div className="card-img-link-wrapper">
 				<div className="img-overlay"></div>
 				<img
 					alt="project"
 					className="card-img"
-					src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png"
+					src={project.imageUrl}
 				/>
-			</a>
+			</div>
 		</div>
 	);
 };
