@@ -7,7 +7,8 @@ const Hero = () => {
 				<p>Hi, my name is</p>
 				<h1 className="heading">Ze Hao Su</h1>
 				<p className="subheadline">
-					<span>Software developer</span> seeking employment
+					<span className="highlight">Software developer</span>{" "}
+					seeking new challenges everyday
 				</p>
 
 				<button className="button-primary">LEARN MORE</button>

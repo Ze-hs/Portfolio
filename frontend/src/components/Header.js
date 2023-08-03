@@ -1,14 +1,15 @@
 import Navbar from "./Navbar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "../styles/styles.scss";
+import logo from "../assets/icons/logo.svg";
 
 const Header = () => {
 	return (
-		<header className="header">
-			<FontAwesomeIcon className="logo" icon={faGithub} />
-			<Navbar />
-		</header>
+		<div className="header-wrapper">
+			<header className="header">
+				<img className="logo" src={logo} alt="logo" />
+				<Navbar />
+			</header>
+		</div>
 	);
 };
 

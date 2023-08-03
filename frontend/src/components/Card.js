@@ -13,20 +13,27 @@ const Card = ({ project }) => {
 					</a>
 				</p>
 				<p className="card-description">{project.description}</p>
+
+				<div className="tag-wrapper">
+					{project.tags.map((tag) => {
+						return (
+							<div className="tag" key={`${project.id}-${tag}`}>
+								{tag}
+							</div>
+						);
+					})}
+				</div>
 			</div>
 
-			<img
-				alt="project"
-				className="card-img"
-				src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png"
-			/>
-
-			{/* <div>
-				{project.tags.map((tag) => {
-					return <div key={`${project.id}-${tag}`}>tag</div>;
-				})} */}
+			<a className="card-img-link-wrapper" href="http://google.com">
+				<div className="img-overlay"></div>
+				<img
+					alt="project"
+					className="card-img"
+					src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png"
+				/>
+			</a>
 		</div>
-		// </div>
 	);
 };
 

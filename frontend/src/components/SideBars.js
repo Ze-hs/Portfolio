@@ -1,22 +1,24 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const SideBars = () => {
 	return (
-		<>
-			<aside>
-				<FontAwesomeIcon icon={faCircle} />
-				<FontAwesomeIcon icon={faCircle} />
-				<FontAwesomeIcon icon={faCircle} />
-			</aside>
+		<div className="side-bars">
+			<aside className="social-bar">
+				<a href="/#">
+					<FontAwesomeIcon icon={faGithub} />
+				</a>
+				<a href="/#">
+					<FontAwesomeIcon icon={faLinkedinIn} />
+				</a>
+				<a href="/#">
+					<FontAwesomeIcon icon={faEnvelope} />
+				</a>
 
-			<aside>
-				<FontAwesomeIcon icon={faGithub} />
-				<FontAwesomeIcon icon={faLinkedinIn} />
-				<FontAwesomeIcon icon={faEnvelope} />
+				<div className="line"></div>
 			</aside>
-		</>
+		</div>
 	);
 };
 

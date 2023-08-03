@@ -14,8 +14,6 @@ const Navbar = () => {
 
 	return (
 		<nav className="navbar">
-			{console.log("hey")}
-
 			<button onClick={handleClick} className={"mobile-nav-toggle"}>
 				{openMenu ? (
 					<FontAwesomeIcon icon={faX} />

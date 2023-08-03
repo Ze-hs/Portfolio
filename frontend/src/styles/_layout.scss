@@ -7,27 +7,27 @@
 
 .container {
 	box-sizing: border-box;
-	padding-inline: clamp(0%, 10%, 15%);
+	padding-inline: clamp(0px, 5%, 10vw);
 	width: min($container-min, 100% - ($container-margin-inline * 2));
 	margin-inline: auto;
-	border-bottom: 1px solid $clr-accent-400;
+
+	min-height: 85vh;
 }
 
 .sub-container {
 	@extend .container;
-	padding-block: 25px 100px;
-	// padding-block: ;
+	padding-block: 15vh;
+	position: relative;
 }
 
 @mixin lg-screen {
-	@media (min-width: $breakpoint) {
+	@media (min-width: $breakpoint-md) {
 		@content;
 	}
 }
 
-//add medium
 @mixin md-screen {
-	@media (min-width: $breakpoint-md) {
+	@media (min-width: $breakpoint) {
 		@content;
 	}
 }
@@ -35,6 +35,13 @@
 @mixin sm-screen {
 	@media (max-width: $breakpoint) {
 		@content;
+	}
+}
+
+@include md-screen() {
+	.container {
+		width: min($container-min, 100% - ($container-margin-inline * 8));
+		padding-inline: calc(15vw - (1920px - 100vw) / 8);
 	}
 }
 

@@ -17,8 +17,8 @@ const App = () => {
 
 	return (
 		<>
+			<SideBars />
 			<Header />
-			{/* <SideBars /> */}
 			<Hero />
 			<ProjectList />
 			<About />
