@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/"
-  to = "http://localhost:3001/api/*"
+  from = "/*"
+  to = "http://localhost:3001/api/projects"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
