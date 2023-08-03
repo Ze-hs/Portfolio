@@ -12,8 +12,8 @@ const Hero = () => {
 					seeking new challenges everyday
 				</p>
 
-				<Link smooth to="/#projects" className="logo-wrapper">
-					<button className="button-primary">LEARN MORE</button>
+				<Link smooth to="/#projects" className=" button-primary">
+					<button>LEARN MORE</button>
 				</Link>
 			</div>
 		</section>
