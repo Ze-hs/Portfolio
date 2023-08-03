@@ -1,0 +1,32 @@
+[
+	{
+		"title": "FroggerLvl1",
+		"description": "A recreation of a classic arcade game where the player navigates a character through a busy, obstacle-filled road and river, aiming to reach the safe zone while avoiding hazards.",
+		"imageUrl": "https://raw.githubusercontent.com/Ze-hs/FroggerLvl1/master/demo/FroggerLvl1%20Demo.jpeg",
+		"githubUrl": "https://github.com/Ze-hs/FroggerLvl1/",
+		"tags": ["Python", "Pygame"],
+		"createdAt": "2023-08-03T16:08:55.007Z",
+		"updatedAt": "2023-08-03T16:08:55.007Z",
+		"id": "64cbd11796471b990d16ef5c"
+	},
+	{
+		"title": "SuperPaint",
+		"description": "Crafted a full featured paint program from scratch using Java and Java Swing",
+		"imageUrl": "https://raw.githubusercontent.com/Ze-hs/SuperPaint/main/Demo/Clear.PNG",
+		"githubUrl": "https://github.com/Ze-hs/JavaPaint/",
+		"tags": ["Java", "Java Swing"],
+		"createdAt": "2023-08-03T16:54:38.654Z",
+		"updatedAt": "2023-08-03T16:54:38.654Z",
+		"id": "64cbdbce96471b990d16ef69"
+	},
+	{
+		"title": "Capulus",
+		"description": "A  coffee-centric e-commerce website mockup offering a wide range of features for an engaging online shopping experience",
+		"imageUrl": "https://camo.githubusercontent.com/5d2cf57d908eb277960f896720abed53caf00d67547f57eed422d9f8b359d6ca/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3631333337313634363933373339393239362f3830313937393633363839323330333432302f756e6b6e6f776e2e706e67",
+		"githubUrl": "https://github.com/RockyLogic/Capulus",
+		"tags": ["Html", "Javascript", "PHP", "SQL"],
+		"createdAt": "2023-08-03T17:01:10.636Z",
+		"updatedAt": "2023-08-03T17:01:10.636Z",
+		"id": "64cbdd5696471b990d16ef6c"
+	}
+]
