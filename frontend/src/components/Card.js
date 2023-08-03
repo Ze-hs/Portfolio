@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Card = ({ project }) => {
-	console.log(project.githubUrl);
 	return (
 		<div className="card">
 			<div className="card-text">

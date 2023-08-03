@@ -4,7 +4,6 @@ const baseUrl = "http://localhost:3001/api/projects";
 
 const getAll = async () => {
 	const response = await axios.get(baseUrl);
-	console.log("inside services", response);
 	return response.data;
 };
 
@@ -23,4 +22,5 @@ const update = async (id, data) => {
 	return response.data;
 };
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default { getAll, get, create, update };
