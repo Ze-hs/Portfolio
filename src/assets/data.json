@@ -28,5 +28,15 @@
 		"createdAt": "2023-08-03T17:01:10.636Z",
 		"updatedAt": "2023-08-03T17:01:10.636Z",
 		"id": "64cbdd5696471b990d16ef6c"
+	},
+	{
+		"title": "VoiceProfficiency",
+		"description": "A web application leveraging AI for speech transcription, enabling users to enhance their speaking skills through playback and identification of words falling short of the desired confidence level threshold.",
+		"imageUrl": "https://raw.githubusercontent.com/Ze-hs/voice_profficiency/master/demo/demo.jpg?token=GHSAT0AAAAAACC35DCOOGZDS4UZ4RZEEVEKZG5MNFA",
+		"githubUrl": "https://github.com/Ze-hs/voice_profficiency",
+		"tags": ["React", "Express", "Node", "Whisper"],
+		"createdAt": "2023-08-16T17:01:10.636Z",
+		"updatedAt": "2023-08-06T17:01:10.636Z",
+		"id": "111111111111111111111111"
 	}
 ]
